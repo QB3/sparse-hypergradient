@@ -48,6 +48,7 @@ def get_beta_jac_t_v_implicit(
         tol=tol, max_iter=max_iter, compute_jac=False, model=model)
     mat_to_inv = model.get_hessian(X, y, mask, dense, log_alpha)
     size_mat = mat_to_inv.shape[0]
+
     v = get_v(mask, dense)
     if hasattr(model, 'dual'):
         v = model.get_dual_v(mask, dense, X, y, v, log_alpha)

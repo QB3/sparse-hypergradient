@@ -69,7 +69,7 @@ dict_cvxpy_func = {
     'logreg': logreg_cvxpy,
     'svm': svm_cvxpy,
     'svr': svr_cvxpy
-    }
+}
 
 dict_vals_cvxpy = {}
 dict_grads_cvxpy = {}
@@ -118,6 +118,7 @@ list_model_crit = [
     ('logreg', 'logistic'),
     ('svm', 'MSE'),
     ('svr', 'MSE')
-    ]
+]
 
 list_model_names = ["lasso", "enet", "wLasso", "logreg", "svm", "svr"]
+list_model_names = ["svr"]
